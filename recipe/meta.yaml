@@ -20,12 +20,15 @@ requirements:
     - pip
   run:
     - python
+    - pip
     - phonopy
     - numpy
 
 test:
   imports:
     - phonolammps
+  commands:
+    - pip check
 
 about:
   home: https://github.com/abelcarreras/phonolammps
