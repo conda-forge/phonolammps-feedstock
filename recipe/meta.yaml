@@ -22,6 +22,8 @@ requirements:
     - python
     - pip
     - phonopy
+    - dynaphopy
+    - seekpath
     - numpy
 
 test:
