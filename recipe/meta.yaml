@@ -1,5 +1,5 @@
 {% set name = "phonolammps" %}
-{% set version = "0.5.2" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/phonoLAMMPS/phonoLAMMPS-{{ version }}.tar.gz
-  sha256: 9b15861d4548e83ea8ae0a1198138e8c4b58e0e74bb64b61c10193082e37381c
+  sha256: 2f582bb4168b420115e7988869e627cc0de1951b83636800a4d050eb1985fad2
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -35,7 +35,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'LAMMPS interface for phonon calculations using phonopy'
+  summary: LAMMPS interface for phonon calculations using phonopy
 
   description: |
     Calculate the 2nd order force constants using phonopy and LAMMPS.
