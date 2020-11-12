@@ -5,9 +5,13 @@ Home: https://github.com/abelcarreras/phonolammps
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/phonolammps-feedstock/blob/master/LICENSE.txt)
 
 Summary: LAMMPS interface for phonon calculations using phonopy
+
+Development: https://github.com/abelcarreras/phonolammps
+
+Documentation: https://phonolammps.readthedocs.io/
 
 Calculate the 2nd order force constants using phonopy and LAMMPS.
 
