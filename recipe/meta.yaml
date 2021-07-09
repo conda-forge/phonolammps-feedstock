@@ -1,5 +1,5 @@
 {% set name = "phonolammps" %}
-{% set version = "0.7.2" %}
+{% set version = "0.7.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/phonoLAMMPS/phonoLAMMPS-{{ version }}.tar.gz
-  sha256: b276368701555c2561f940792eb7a0d2b310f9caff3be1a85622faf716eb3372
+  sha256: 4011aa5c58b4beb0e5ebd9a2c4796360e49628abd8f50a337eeef6cb1a6c122f
 
 build:
   noarch: python
@@ -16,10 +16,10 @@ build:
 
 requirements:
   host:
-    - python >=3.6 
+    - python >=3.6
     - pip
   run:
-    - python >=3.6 
+    - python >=3.6
     - pip
     - phonopy
     - dynaphopy
