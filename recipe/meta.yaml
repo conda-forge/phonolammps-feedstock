@@ -8,8 +8,6 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/phonoLAMMPS/phonoLAMMPS-{{ version }}.tar.gz
   sha256: e3f1ca0121c0c5010f69bcfdd26e2d59e096892ef46143e18843dd13c69cf4e2
-  patches:
-    - lammps.patch
 
 build:
   noarch: python
