@@ -1,5 +1,5 @@
 {% set name = "phonolammps" %}
-{% set version = "0.8.3" %}
+{% set version = "0.8.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/phonoLAMMPS/phonoLAMMPS-{{ version }}.tar.gz
-  sha256: a3563d181dddae45575a79b0355b503bf877c5b646f426d9deaeb833e9d1ed0a
+  sha256: 2ab91418ec6cc376734eb5097b72681c3c5f66d7acaca8a1ebcb71ef17229902
 
 build:
   noarch: python
