@@ -1,11 +1,11 @@
-About phonolammps
-=================
+About phonolammps-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/phonolammps-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/abelcarreras/phonolammps
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/phonolammps-feedstock/blob/main/LICENSE.txt)
 
 Summary: LAMMPS interface for phonon calculations using phonopy
 
