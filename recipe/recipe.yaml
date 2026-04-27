@@ -1,0 +1,52 @@
+schema_version: 1
+
+context:
+  name: phonolammps
+  version: "0.10.1"
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/phonoLAMMPS/${{ name }}-${{ version }}.tar.gz
+  sha256: 99da66415ef9e5aa804848d394fdb36a9957499ec5db27e5244dad3cd2b5e6a1
+
+build:
+  number: 1
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - pip
+    - setuptools
+  run:
+    - python >=${{ python_min }}
+    - pip
+    - phonopy
+    - dynaphopy
+    - seekpath
+    - numpy
+
+tests:
+  - python:
+      imports:
+        - phonolammps
+      pip_check: true
+      python_version: ${{ python_min }}
+
+about:
+  license: MIT
+  license_file: LICENSE
+  summary: LAMMPS interface for phonon calculations using phonopy
+  description: |
+    Calculate the 2nd order force constants using phonopy and LAMMPS.
+  homepage: https://github.com/abelcarreras/phonolammps
+  repository: https://github.com/abelcarreras/phonolammps
+  documentation: https://phonolammps.readthedocs.io/
+
+extra:
+  recipe-maintainers:
+    - jan-janssen
